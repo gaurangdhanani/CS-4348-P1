@@ -1,0 +1,13 @@
+{cslinux1:~/CS 4348/project1/work} java Logger log.txt
+START Logging Initialized.
+Logged: 2025-03-20 18:14 [START] Logging Initialized.
+INFO User logged in.
+Logged: 2025-03-20 18:14 [INFO] User logged in.
+ERROR Invalid password attempt.
+Logged: 2025-03-20 18:14 [ERROR] Invalid password attempt.
+QUIT
+Logger shutting down.
+{cslinux1:~/CS 4348/project1/work} cat log.txt
+2025-03-20 18:14 [START] Logging Initialized.
+2025-03-20 18:14 [INFO] User logged in.
+2025-03-20 18:14 [ERROR] Invalid password attempt.
