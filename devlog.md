@@ -26,3 +26,15 @@ It was started with -- java Logger log.txt --, and sample inputs such as "START 
 and "ERROR Invalid password attempt." were entered. Each message was properly formatted, written to the log file, 
 and displayed as confirmation. The program correctly handled the "QUIT" command, shutting down perfectly. Finally, verified the log.txt if it 
 was working and I copy all the output into samplelog text file.
+
+# Mar. 20 6:45pm
+
+Started working on Encryption file. The Encryption Program will continuously read commands from standard input (System.in), process them, and output results to standard output (System.out). It will support four commands: PASS <key> to set a passkey, ENCRYPT <text> to encrypt a message, DECRYPT <text> to decrypt a message, and QUIT to terminate the program. If encryption or decryption is attempted without setting a passkey, the program will return an error. It will validate input to ensure only uppercase letters are used and handle errors gracefully with appropriate messages. The program will run in a loop, waiting for input until "QUIT" is received, ensuring seamless interaction and future integration with the Driver Program via inter-process communication (IPC).
+
+# Mar. 20 9:45pm
+
+The encryption program was successfully executed and reads commands from standard input, processes them, and outputs results to standard output. 
+It supports PASS to set a passkey, ENCRYPT and DECRYPT to process text using the Vigenère cypher, and QUIT to exit. 
+The program validates that inputs contain only uppercase letters and returns results in the format RESULT <text> or ERROR <message>. 
+It uses a loop to handle multiple commands and ensures the passkey is set before allowing encryption or decryption. 
+The logic is cleanly structured and ready for integration with the driver.
