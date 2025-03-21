@@ -38,3 +38,10 @@ It supports PASS to set a passkey, ENCRYPT and DECRYPT to process text using the
 The program validates that inputs contain only uppercase letters and returns results in the format RESULT <text> or ERROR <message>. 
 It uses a loop to handle multiple commands and ensures the passkey is set before allowing encryption or decryption. 
 The logic is cleanly structured and ready for integration with the driver.
+
+# Mar. 20 10:00pm
+
+Starting the driver program. The driver program will start by taking the log file name as a command-line argument. 
+It will launch the logger and encryption programs as separate subprocesses and establish communication with them using input/output streams. 
+It will display a menu to the user and handle commands like password, encrypt, decrypt, history, and quit. For each user command, the driver will send appropriate messages to the encryption program, log the command and result (excluding passwords) via the logger, and store all entered or processed strings in a session-based history. 
+It will continue looping until the quit command is entered, after which it will send the QUIT signal to both subprocesses and terminate cleanly.
