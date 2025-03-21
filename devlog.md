@@ -45,3 +45,13 @@ Starting the driver program. The driver program will start by taking the log fil
 It will launch the logger and encryption programs as separate subprocesses and establish communication with them using input/output streams. 
 It will display a menu to the user and handle commands like password, encrypt, decrypt, history, and quit. For each user command, the driver will send appropriate messages to the encryption program, log the command and result (excluding passwords) via the logger, and store all entered or processed strings in a session-based history. 
 It will continue looping until the quit command is entered, after which it will send the QUIT signal to both subprocesses and terminate cleanly.
+
+# Mar. 20 11:00pm
+
+In the Driver program, prompt the user with "Use history? (y/n):" to choose between selecting a string from the session history or 
+entering a new one for commands like `password`, `encrypt`, and `decrypt`. Initially, this prompt accepted any input, including invalid 
+responses like "HELLO" or "maybe", which led to unintended behavior and could confuse users by bypassing the intended logic flow. During testing, 
+we identified this issue and realized it violated basic input validation expectations. To fix the problem I had to come up with a validation loop that checks 
+if the input is strictly 'y' or 'n' (case-insensitive), and if not, it re-prompts the user with a clear message until valid input is received. 
+This fix ensures the program behaves consistently, guides users properly, and meets the project’s requirement for a smooth, interactive, and error-resilient user interface. It also reinforces the importance of validating all interactive prompts in command-line tools to prevent logic errors and unexpected states.
+The driver program was successfully executed.
