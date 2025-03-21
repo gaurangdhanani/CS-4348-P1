@@ -55,3 +55,7 @@ we identified this issue and realized it violated basic input validation expecta
 if the input is strictly 'y' or 'n' (case-insensitive), and if not, it re-prompts the user with a clear message until valid input is received. 
 This fix ensures the program behaves consistently, guides users properly, and meets the project’s requirement for a smooth, interactive, and error-resilient user interface. It also reinforces the importance of validating all interactive prompts in command-line tools to prevent logic errors and unexpected states.
 The driver program was successfully executed.
+
+# Mar. 20 11:15pm
+
+I did the test walkthrough and it was successful. Now, I will finalize the work in the next session, and add the readme file.
