@@ -34,4 +34,10 @@ To run:      java Driver <filename>.txt
 
 I used "java Driver Samplelog.txt".
 
+-----------------------------------------
+ How to clone the repository from Github 
+-----------------------------------------
+
+git clone https://github.com/gaurangdhanani/CS-4348-P1.git
+
 THANK YOU!
